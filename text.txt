@@ -23,6 +23,8 @@ For JS FILE *************
     - function for changing the color of the squares, when answered corrctly 
         - also adding a buzzer and bell noise for right and wrong answers
 
+    - create the ability to keep track of how many were guessed correctly our of how many were taken.
+
 
 
 
