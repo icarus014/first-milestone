@@ -1,0 +1,21 @@
+For html file  *********
+    - heading (h1)
+    - Easy , Medium and Hard Button 
+    - reset Button
+        - reset button and difficulty btns in the same div 
+    - displaying squares W/ different colors (one w/ the correct color as rgb color)
+        - squares all should be in one div (container)
+
+For JS FILE *************
+    - add event listener for buttons
+        - one for easy button and one for hard btn
+        - hard will include 9 squares
+        - medium will include 6 squares
+        - easy will include 3 squares
+
+    - Add event listener for reset and play again button
+    - message display for correct answer and incorrect answer 
+
+    - function for getting and  generating random rgb  , in each section R, G, and B
+    - function for changing the color of the squares, when answered corrctly 
+        - also adding a buzzer and bell noise for right and wrong answers
