@@ -29,3 +29,5 @@ For JS FILE *************
 CSS
 - reset button will under colored squares
 - h1 will be centered above squares 
+- colored squares will be centered as well 
+- everything should be in separate divs in html !!!!!!!!!
