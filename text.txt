@@ -5,6 +5,9 @@ For html file  *********
         - reset button and difficulty btns in the same div 
     - displaying squares W/ different colors (one w/ the correct color as rgb color)
         - squares all should be in one div (container)
+    
+    
+    
 
 For JS FILE *************
     - add event listener for buttons
@@ -19,3 +22,10 @@ For JS FILE *************
     - function for getting and  generating random rgb  , in each section R, G, and B
     - function for changing the color of the squares, when answered corrctly 
         - also adding a buzzer and bell noise for right and wrong answers
+
+
+
+
+CSS
+- reset button will under colored squares
+- h1 will be centered above squares 
