@@ -1,24 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap");
 
-body{
-    background-color: #fff;
-    margin: 0;
-    font-family:'Roboto', sans-serif ;
+body {
+  background-color: #fff;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
-.square{
-    width: 30%;
-    background: purple;
-    padding-bottom: 30%;
-    float: left;
-    margin: 1.66%;
-    border-radius: 15%;
-    transition: background 0.6s;
-    -webkit-transition: background 0.6s;
-    -moz-transition: background 0.6s;
+.square {
+  width: 30%;
+  background: purple;
+  padding-bottom: 30%;
+  float: left;
+  margin: 1.06%;
+  border-radius: 5%;
+  transition: background 0.6s;
+  -webkit-transition: background 0.6s;
+  -moz-transition: background 0.6s;
 }
 
-.container{
-    margin: 20px auto;
-    max-width: 600px;
+#container {
+  margin: 30px auto;
+  max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+    margin-top: 100px;
 }
