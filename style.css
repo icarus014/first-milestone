@@ -37,6 +37,7 @@ h1 {
 /* Button and Button hover Styling */
 button{
     border: none;
+    border-radius: 12px;
     background: none;
     text-transform: uppercase;
     height: 100%;
@@ -54,6 +55,7 @@ button:hover{
     color: white;
     background:#2ebf91 ;
     transition: all ease 0.4s;
+    
 }
 
 /* Message css */
