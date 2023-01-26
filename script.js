@@ -8,7 +8,6 @@ var messageDisplay= document.querySelector("#message");
 var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
 var easyBtn= document.querySelector("#easyButton");
-var mediumBtn= document.querySelector("#mediumButton");
 var hardBtn= document.querySelector("#hardButton");
 
 // Difficulty buttons
@@ -16,7 +15,6 @@ var hardBtn= document.querySelector("#hardButton");
 easyBtn.addEventListener("click", function() {
     // hightlights selected button 
     hardBtn.classList.remove("selected");
-    mediumBtn.classList.remove("selected");
     easyBtn.classList.add("selected");
     // sets the number of squares for each difficulty 
     numSquares = 3;
