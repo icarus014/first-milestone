@@ -1,13 +1,13 @@
 // DECLARING VARIABLES
 var numSquares = 6;
 var colors = generateColors(numSquares);
-var squares = document.querySelector(".square");
-var pickedColor = randomColorG();
+var squares = document.querySelectorAll(".square");
+var pickedColor;
 var colorDisplay = document.querySelector("#colorDisplay");
 var messageDisplay= document.querySelector("#message");
 var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
-let easyBtn= document.querySelector("#easyBtn");
+var easyBtn= document.querySelector("#easyBtn");
 var hardBtn= document.querySelector("#hardBtn");
 
 // Difficulty buttons
@@ -17,12 +17,10 @@ easyBtn.addEventListener("click", function(){
     // hightlights selected button 
     hardBtn.classList.remove("selected");
     easyBtn.classList.add("selected");
-    // sets the number of squares for each difficulty 
-    numSquares = 3;
+
+    this.textContent === "Easy" ? numSquares = 3: numSquares=6
     // change colors to 3
     colors = generateColors(numSquares);
-    // resets winning color
-    pickedColor = randomColorG();
     // changes display to picked color 
     colorDisplay.textContent = pickedColor();
     // loop through squares/ reset colors
@@ -39,7 +37,6 @@ hardBtn.addEventListener("click", function() {
     easyBtn.classList.remove("selected");
     hardBtn.classList.add("selected");
     numSquares = 6;
-    colors = generateColors(numSquares);
     pickedColor = randomColorG();
     colorDisplay.textContent = pickedColor();
     for( var i = 0; i<squares.length; i++){
@@ -123,5 +120,5 @@ function randomColor(){
 	var g = Math.floor(Math.random() * 256);
 	// pick a "blue" from 0 - 255
 	var b = Math.floor(Math.random() * 256);
-	return "rgb(" + r +", " + g +", " + b +")";
+	return "RGB(" + r +", " + g +", " + b +")";
 }
