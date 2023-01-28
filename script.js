@@ -5,7 +5,7 @@ var pickedColor;
 var h1 = document.querySelector("h1");
 var rgb = document.getElementById("colorDisplay");
 var resetButton = document.querySelector("#reset");
-var messageDisplay = document.getElementById("message");
+var messageDisplay = document.querySelector("#message");
 var easyBtn = document.querySelector(".easyMode")
 var hardBtn = document.querySelector(".hardMode")
 var squares = document.querySelectorAll(".square");
@@ -40,16 +40,7 @@ hardBtn.addEventListener("click", function(){
 	}
 })
 
-
-
-
-
-
-
-
-
-
- // GAME RESET 
+// GAME RESET 
  function resetGame(){
 	//generate all new colors
 	colors = generateRandomColors(numSquares);
@@ -91,7 +82,7 @@ function setSquares(){
 	    squares[i].addEventListener("click", function(){
 		// grab color of pickedColor
 		    var clickedColor = this.style.backgroundColor;
-        // compare color to pickedColor 
+
 		    if(clickedColor === pickedColor){
 			    for(var i = 0; i < squares.length; i++){
 				    squares[i].style.backgroundColor = pickedColor;
