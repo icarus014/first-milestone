@@ -6,29 +6,47 @@ var h1 = document.querySelector("h1");
 var rgb = document.getElementById("colorDisplay");
 var resetButton = document.querySelector("#reset");
 var messageDisplay = document.getElementById("message");
-var modeBtns = document.querySelectorAll(".mode");
+var easyBtn = document.querySelector(".easyMode")
+var hardBtn = document.querySelector(".hardMode")
 var squares = document.querySelectorAll(".square");
 
-init;
+// init;
 
 function init(){
-    setModeBtns();
     resetGame();
-    setsquares()
+    setsquares();
 }
 // Difficulty buttons
-function setModeBtns(){
-    for (let i=0; i < modeBtns.length; i++){
-        modeBtns[i].addEventListener("click", function (){
-            modeBtns[0].classList.remove("selected");
-            modeBtns[1].classList.remove("selected");
-            this.classList.add("selected");
-            this.textContent === "Easy" ? numSquares = 3: numSquares = 6
-            resetGame();
-        })
+easyBtn.addEventListener("click", function(){
+    hardBtn.classList.remove("selected");
+    easyBtn.classList.add("selected");
+    numSquares = 3;
+    for(var i = 0; i < squares.length; i++){
+        if (colors[i]){
+            squares[i].style.background = colors[i];
+        } else{
+            squares[i].style.display = "none;"
+        }
     }
-}
-console.log(setModeBtns)
+})
+
+hardBtn.addEventListener("click", function(){
+    easyBtn.classList.remove("selected")
+    hardBtn.classList.add("selected")
+    numSquares = 6
+	for(var i = 0; i < squares.length; i++){
+		squares[i].style.backgroundColor = colors[i];
+		squares[i].style.display = "block";
+	}
+})
+
+
+
+
+
+
+
+
 
 
  // GAME RESET 
@@ -54,6 +72,7 @@ console.log(setModeBtns)
     messageDisplay.textContent = " "
 }
 
+
 // Reset Button using resetGame Function 
 resetButton.addEventListener("click", function(){
     resetGame();
@@ -70,7 +89,7 @@ function setSquares(){
 
 	    // add event listeners to the squares
 	    squares[i].addEventListener("click", function(){
-		    // grab color of pickedColor
+		// grab color of pickedColor
 		    var clickedColor = this.style.backgroundColor;
         // compare color to pickedColor 
 		    if(clickedColor === pickedColor){
