@@ -1,16 +1,17 @@
 // DECLARING VARIABLES
 var numSquares = 6;
-var colors = generateRandomColors(numSquares);
+var colors = generateColors(numSquares);
 var squares = document.querySelector(".square");
 var pickedColor = randomColorG();
 var colorDisplay = document.querySelector("#colorDisplay");
 var messageDisplay= document.querySelector("#message");
 var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
-let easyBtn= document.querySelector("#easyButton");
-var hardBtn= document.querySelector("#hardButton");
+let easyBtn= document.querySelector("#easyBtn");
+var hardBtn= document.querySelector("#hardBtn");
 
 // Difficulty buttons
+
 
 easyBtn.addEventListener("click", function(){
     // hightlights selected button 
@@ -19,7 +20,7 @@ easyBtn.addEventListener("click", function(){
     // sets the number of squares for each difficulty 
     numSquares = 3;
     // change colors to 3
-    colors = generateRandomColors(numSquares);
+    colors = generateColors(numSquares);
     // resets winning color
     pickedColor = randomColorG();
     // changes display to picked color 
@@ -38,7 +39,7 @@ hardBtn.addEventListener("click", function() {
     easyBtn.classList.remove("selected");
     hardBtn.classList.add("selected");
     numSquares = 6;
-    colors = generateRandomColors(numSquares);
+    colors = generateColors(numSquares);
     pickedColor = randomColorG();
     colorDisplay.textContent = pickedColor();
     for( var i = 0; i<squares.length; i++){
@@ -50,7 +51,7 @@ hardBtn.addEventListener("click", function() {
  // RESET BUTTON AND CHANGING COLORS OF SQUARES
 resetButton.addEventListener("click", function(){
     // GENERATE NEW COLORS 
-    colors = generateRandomColors(numSquares);
+    colors = generateColors(numSquares);
     // PICK NEW COLOR FROM ARRAY
     pickedColor = randomColorG();
     // CHANGE colorDisplay TO MATCH THE PICKED COLOR 
@@ -63,10 +64,10 @@ resetButton.addEventListener("click", function(){
         squares[i].style.backgroundColor = colors[i];
     }
     // CHANGES WINNING COLOR BACK TO OG BACKGROUND COLOR
-    h1.style.background = "steelblue";
+    h1.style.background = "linear-gradient(to right,#8360c3,#2ebf91)";
 })
 
-colorDisplay.textContent = pickedColor()
+// colorDisplay.textContent = pickedColor();
 
 for(var i = 0; i < squares.length; i++) {
 //add initial colors to squares
@@ -103,7 +104,7 @@ function randomColorG(){
 	return colors[random];
 }
 
-function generateRandomColors(genColor){
+function generateColors(genColor){
 	//make an array
 	var arr = []
 	//repeat num times
