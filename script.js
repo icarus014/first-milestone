@@ -12,12 +12,12 @@ var hardBtn = document.querySelector("#hardButton");
 
 
 easyBtn.addEventListener("click", function(){
-	//Highlights button to the mode selected
+	//highlight button to show selected
 	hardBtn.classList.remove("selected");
 	easyBtn.classList.add("selected");
-	//Sets number of squares to 3
+	//set number of squares to 3
 	numSquares = 3;
-	//Changes colors to 3
+	//change colors to 3
 	colors = generateRandomColors(numSquares);
 	//reset winning color
 	pickedColor = randomColorG();
@@ -47,11 +47,11 @@ hardBtn.addEventListener("click", function(){
 });
 
 resetButton.addEventListener("click", function(){
-	//Generates all new colors
+	//generate all new colors
 	colors = generateRandomColors(numSquares);
-	//Picks a new random color from array
+	//pick a new random color from array
 	pickedColor = randomColorG();
-	//Changes colorDisplay to match picked color
+	//change colorDisplay to match picked color
 	colorDisplay.textContent = pickedColor;
 	resetButton.textContent = "New Colors";
 	messageDisplay.textContent = "";
@@ -60,7 +60,7 @@ resetButton.addEventListener("click", function(){
 		squares[i].style.backgroundColor = colors[i];
 	}
 	//set winning color highlight back to default
-	h1.style.background = "linear-gradient(to right,#8360c3,#2ebf91)"; 
+	h1.style.background = "steelblue"; 
 })
 
 colorDisplay.textContent = pickedColor;
@@ -81,7 +81,7 @@ for(var i = 0; i < squares.length; i++) {
 			h1.style.background = clickedColor;
 		}	else {
 			this.style.backgroundColor = "#232323";
-			messageDisplay.textContent = "Try Again !";
+			messageDisplay.textContent = "Try Again";
 		}
 		});
 }
@@ -101,17 +101,17 @@ function randomColorG(){
 }
 
 function generateRandomColors(genColor){
-	//Creates array
+	//make an array
 	var arr = []
 	//repeat num times
 	for(var i = 0; i < genColor; i++){
-	// Grabs random color and pushes into array
+	// get random color and push into array
 		arr.push(randomColor())
 	}
 	//return that array
 	return arr;
 }
-// RGB number generation
+
 function randomColor(){
 	//pick a "red" from 0 - 255
 	var r = Math.floor(Math.random() * 256);
@@ -119,5 +119,5 @@ function randomColor(){
 	var g = Math.floor(Math.random() * 256);
 	// pick a "blue" from 0 - 255
 	var b = Math.floor(Math.random() * 256);
-	return "RGB(" + r +", " + g +", " + b +")";
+	return "rgb(" + r +", " + g +", " + b +")";
 }
