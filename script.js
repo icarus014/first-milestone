@@ -14,12 +14,12 @@ var squares = document.querySelectorAll(".square");
 
 function init(){
     resetGame();
-    setsquares();
+    setSquares();
 }
 // Difficulty buttons
 easyBtn.addEventListener("click", function(){
-    hardBtn.classList.remove("selected");
-    easyBtn.classList.add("selected");
+    hardBtn.classList.remove("selected")
+    easyBtn.classList.add("selected")
     numSquares = 3;
     for(var i = 0; i < squares.length; i++){
         if (colors[i]){
@@ -80,9 +80,10 @@ function setSquares(){
 
 	    // add event listeners to the squares
 	    squares[i].addEventListener("click", function(){
-		// grab color of pickedColor
+		    // grab color of pickedColor
 		    var clickedColor = this.style.backgroundColor;
 
+		    // compare color to pickedColor 
 		    if(clickedColor === pickedColor){
 			    for(var i = 0; i < squares.length; i++){
 				    squares[i].style.backgroundColor = pickedColor;
@@ -92,7 +93,7 @@ function setSquares(){
 		        //reset text should be play again
 		        resetButton.textContent = "PLAY AGAIN!";
 		    }else{
-			    this.style.backgroundColor = "linear-gradient(to right,#8360c3,#2ebf91)" ;
+			    this.style.backgroundColor = "#232323" ;
 			    messageDisplay.textContent = "WRONG!! TRY AGAIN!";
 		    }
 	    });
