@@ -1,3 +1,4 @@
+// Declaring Variables 
 var numSquares = 6;
 var colors = generateRandomColors(numSquares);
 var squares = document.querySelectorAll(".square");
@@ -11,12 +12,12 @@ var hardBtn = document.querySelector("#hardButton");
 
 
 easyBtn.addEventListener("click", function(){
-	//highlight button to show selected
+	//Highlights button to the mode selected
 	hardBtn.classList.remove("selected");
 	easyBtn.classList.add("selected");
-	//set number of squares to 3
+	//Sets number of squares to 3
 	numSquares = 3;
-	//change colors to 3
+	//Changes colors to 3
 	colors = generateRandomColors(numSquares);
 	//reset winning color
 	pickedColor = randomColorG();
@@ -80,7 +81,7 @@ for(var i = 0; i < squares.length; i++) {
 			h1.style.background = clickedColor;
 		}	else {
 			this.style.backgroundColor = "#232323";
-			messageDisplay.textContent = "Try Again";
+			messageDisplay.textContent = "Try Again !";
 		}
 		});
 }
@@ -100,17 +101,17 @@ function randomColorG(){
 }
 
 function generateRandomColors(genColor){
-	//make an array
+	//Creates array
 	var arr = []
 	//repeat num times
 	for(var i = 0; i < genColor; i++){
-	// get random color and push into array
+	// Grabs random color and pushes into array
 		arr.push(randomColor())
 	}
 	//return that array
 	return arr;
 }
-
+// RGB number generation
 function randomColor(){
 	//pick a "red" from 0 - 255
 	var r = Math.floor(Math.random() * 256);
@@ -118,5 +119,5 @@ function randomColor(){
 	var g = Math.floor(Math.random() * 256);
 	// pick a "blue" from 0 - 255
 	var b = Math.floor(Math.random() * 256);
-	return "rgb(" + r +", " + g +", " + b +")";
+	return "RGB(" + r +", " + g +", " + b +")";
 }
