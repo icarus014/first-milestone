@@ -9,34 +9,27 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Title -->
     <h1>
-      RGB Color Guesser
+      RGB Color Guessing Game
       <br />
       <span id="colorDisplay"></span>
     </h1>
-
-    <!-- Squares -->
-    <div class="container-div">
-      <div id="container">
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-      </div>
-    </div>
-    <!-- Bottom Buttons -->
+    <!-- Bottom Bar -->
     <div class="bottom-bar">
       <button id="reset">New Colors</button>
       <span id="message"></span>
-      <div class="buttons">
-        <button class="easyMode">Easy</button>
-        <button class="hardMode">Hard</button>
-      </div>
+      <button id="easyButton">Easy</button>
+      <button id="hardButton" class="selected">Hard</button>
+    </div>
+    <!-- Squares -->
+    <div id="container">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
     </div>
   </body>
-  <!-- JS Link -->
   <script src="script.js"></script>
 </html>
