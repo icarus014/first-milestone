@@ -60,7 +60,7 @@ resetButton.addEventListener("click", function(){
 		squares[i].style.backgroundColor = colors[i];
 	}
 	//set winning color highlight back to default
-	h1.style.background = "steelblue"; 
+	h1.style.background = "linear-gradient(to right, #8360c3, #2ebf91)"; 
 })
 
 colorDisplay.textContent = pickedColor;
