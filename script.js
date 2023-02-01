@@ -10,7 +10,7 @@ var resetButton = document.querySelector("#reset");
 var easyBtn = document.querySelector("#easyButton");
 var hardBtn = document.querySelector("#hardButton");
 
-
+// Difficulty Buttons
 easyBtn.addEventListener("click", function(){
 	//Highlights button to show selected
 	hardBtn.classList.remove("selected");
@@ -45,7 +45,7 @@ hardBtn.addEventListener("click", function(){
 		squares[i].style.display = "block";
 	}
 });
-
+// Reset Button add event listener
 resetButton.addEventListener("click", function(){
 	//Generate all new colors
 	colors = generateRandomColors(numSquares);
@@ -72,7 +72,7 @@ for(var i = 0; i < squares.length; i++) {
 	squares[i].addEventListener("click", function(){
 		//grab color of clicked square
 		var clickedColor = this.style.backgroundColor;
-		//compare color to pickedColor
+		//compare color to pickedColor/ Shows corresponding message to what sqaure has been picked
 		console.log(clickedColor, pickedColor);
 		if(clickedColor === pickedColor){
 			messageDisplay.textContent = "Correct!";
