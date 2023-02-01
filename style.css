@@ -53,9 +53,9 @@ button {
   font-size: 1.5rem;
 }
 
-.selected {
+.selected{
   color: pink;
-  background-image: linear-gradient(to right, #8360c3, #2ebf91);
+  background-image:linear-gradient(to right, #8360c3, #2ebf91) ;
 }
 
 button:hover {
@@ -76,28 +76,25 @@ button:hover {
 
 /* button positioning */
 .bottom-bar {
-  position: relative;
-  top: 450px;
-  left: 550px;
+  position: relative;top: 450px; left: 550px;
   display: block;
   padding: 0;
   margin: 0;
   justify-content: space-evenly;
 }
 
-#hardButton {
+#hardButton{
   display: inline-block;
   align-items: center;
   margin: auto;
-  position: relative;
-  top: 50px;
-  right: 84.5px;
+  position:relative; top: 50px; right: 84.5px;
   justify-content: space-between;
   padding-top: 0.5rem;
 }
 
-#reset {
+
+
+#reset{
   justify-content: center;
-  position: relative;
-  left: 111px;
+  position: relative; left:111px;
 }
