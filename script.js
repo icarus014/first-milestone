@@ -59,7 +59,7 @@ resetButton.addEventListener("click", function(){
 	for(var i = 0; i < squares.length; i++){
 		squares[i].style.backgroundColor = colors[i];
 	}
-	//Sets winning color back to default background color(graident)
+	//Sets winning color back to default background color(gradient)
 	h1.style.background = "linear-gradient(to right, #8360c3, #2ebf91)"; 
 })
 
