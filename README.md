@@ -1,5 +1,5 @@
 # first-milestone
 
-I wanted to make something simple and I plan on getting into app development once i am finished with this bootcamp.
+For my first milestone project, i had decided to create a color guessing game using RGB instead of hexcodes. There are two difficulties that change the amount of squares that are shown on the screen. Easy only showing three squares and Hard showing six squares. The objective of the game as some would know, is to click the colored square that matches the RGB numbers displayed in the header. If wrong color is clicked, that square will disappear and will leave you  with a remaining number of squares. 
 
-In light, whats a better way for any junior UX/UI designer and app developer to work on their rgb codes? - With a color guessing game of course, but only using rgb, not hex codes !
+Along with picking the wrong color, a message will inform you of you wrong decision. Once the right color is chosen, another message will let you know that you are correct and the header background color will change the to the correct color. 
