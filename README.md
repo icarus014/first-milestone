@@ -12,5 +12,4 @@ Once the right color is chosen, another message will let you know that you are c
 I think this project is for perfect for anyone who is a beginner in learning and developing front-end, more specifically javascript. 
 
 Below will be a desktop screenshot of the game
-! [alt text](https://github.com/icarus014/first-milestone/blob/main/Screenshot2023-02-01at7.31.44PM.png?raw=true)
-Screenshot 2023-02-01 at 7.31.44 PM.png
+![alt text](http://url/to/Screenshot2023-02-01at7.31.44PM.png)
