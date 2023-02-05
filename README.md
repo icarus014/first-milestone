@@ -17,3 +17,6 @@ I think this project is for perfect for anyone who is a beginner in learning and
 ### Game Screenshot
 Below will be a desktop screenshot of the project.
 [![Screenshot-2023-02-01-at-7-31-44-PM.png](https://i.postimg.cc/FH5nyvQ3/Screenshot-2023-02-01-at-7-31-44-PM.png)](https://postimg.cc/jLcXTG2S)
+
+#### Link to Deployed Project
+https://icarus014.github.io/first-milestone/
